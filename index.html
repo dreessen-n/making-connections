@@ -67,18 +67,25 @@
                             Connection Requests
                         </div>
                     </div>
+                    <!-- first request  -->
                     <div class="connection-request-card_content">
-                        <div class="connection-request-card_user-request">
+                        <div id="request1" class="connection-request-card_user-request">
                             <div class="connection-request-card_user-name">
                                 <img src="./assets/images/todd-s.jpg" class="img_connection-request-card_user-icon" alt="user icon">
                                 Todd E.
                             </div>
                             <div class="connection-request-card_acceptReject"> 
-                                <img src="./assets/icons/accept-circle.png" class="img_connection-request-card_accept" alt="accept icon">
-                                <img src="./assets/icons/close-circle.png" class="img_connection-request-card_cancel" alt="cancel icon">
+                                <!-- Add function to remove request  -->
+                                <span class="connection-request-accept" onclick="acceptRequest('request1')">
+                                    <img src="./assets/icons/accept-circle.png" class="img_connection-request-card_accept" alt="accept icon">
+                                </span>
+                                <span class="connection-request-accept" onclick="removeRequest('request1')">
+                                    <img src="./assets/icons/close-circle.png" class="img_connection-request-card_cancel" alt="cancel icon">
+                                </span> 
                             </div>
                         </div>
-                        <div class="connection-request-card_user-request">
+                        <!-- next request  -->
+                        <div id="request2" class="connection-request-card_user-request">
                             <div class="connection-request-card_user-name">
                                 <img src="./assets/images/phil-s.jpg" class="img_connection-request-card_user-icon" alt="user icon">
                                 Phil K
