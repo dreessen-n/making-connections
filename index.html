@@ -91,9 +91,12 @@
                                 Phil K
                             </div>
                             <div class="connection-request-card_acceptReject">
-                                <img src="./assets/icons/accept-circle.png" class="img_connection-request-card_accept" alt="accept icon">
-                                <img src="./assets/icons/close-circle.png" class="img_connection-request-card_cancel" alt="cancel icon">
-
+                                <span class="connection-request-accept" onclick="acceptRequest('request2')">
+                                    <img src="./assets/icons/accept-circle.png" class="img_connection-request-card_accept" alt="accept icon">
+                                </span>
+                                <span class="connection-request-accept" onclick="removeRequest('request2')">
+                                    <img src="./assets/icons/close-circle.png" class="img_connection-request-card_cancel" alt="cancel icon">
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -102,10 +105,10 @@
                 <div class="your-connections-card_container">
                     <div class="your-connections-card_head">
                         <div class="your-connections-card_numberOfRequest">
-                            <div class="your-connections-card_numContainer">500+</div>
+                            <div class="your-connections-card_numContainer"> <span id="num_your-connections">500</span> +</div>
                         </div>
                         <div class="your-connections-card_title">
-                            Connection Requests
+                            Your Connections
                         </div>
                     </div>
                     <div class="your-connections-card_content">
