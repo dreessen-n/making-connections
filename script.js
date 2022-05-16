@@ -5,7 +5,7 @@ function changeName() {
     x.innerText = 'Melisa Hidalgo';
 }
 
-// function to remove request
+// function to accept request
 
 function acceptRequest(id) {
     // remove reqeust when accepted
@@ -25,6 +25,8 @@ function acceptRequest(id) {
     y.innerText = z;
 }
 
+// function to decline request
+
 function removeRequest(id) {
     // remove request after rejecting
     var x = document.getElementById(id);
@@ -36,9 +38,13 @@ function removeRequest(id) {
     b--;
     a.innerHTML = b;
 
-    // decrease your connections number by 1
-    var y = document.getElementById('num_your-connections')
-    var z = y.innerText;
-    z--;
-    y.innerText = z;
 }
+
+// REMOVED THIS PART OF FUNCTION:
+// assignment said only to increase not decreasse
+
+// decrease your connections number by 1
+//     var y = document.getElementById('num_your-connections')
+//     var z = y.innerText;
+//     z--;
+//     y.innerText = z;
